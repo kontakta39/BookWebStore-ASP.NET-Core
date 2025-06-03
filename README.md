@@ -1,2 +1,0 @@
-# SoftUni-CSharp-Software-Engineering
- 
