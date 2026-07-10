@@ -148,8 +148,8 @@ public class OrderController : Controller
         return Json(new
         {
             success = true,
-            itemTotal = orderBook.UnitPrice.ToString("F2"),
-            totalPrice = order.TotalPrice.ToString("F2")
+            itemTotal = orderBook.UnitPrice,
+            totalPrice = order.TotalPrice
         });
     }
 
