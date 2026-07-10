@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using static BookWebStore.Constants.ModelConstants;
 
-namespace BookWebStore.Controllers;
+namespace BookWebStore;
 
 public class AccountController : Controller
 {

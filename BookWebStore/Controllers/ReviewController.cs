@@ -4,7 +4,7 @@ using BookWebStore.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookWebStore.Controllers;
+namespace BookWebStore;
 
 public class ReviewController : Controller
 {

@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace BookWebStore.ViewModels;
+﻿namespace BookWebStore.ViewModels;
 
 public class GenreDeleteViewModel
 {

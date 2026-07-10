@@ -1,5 +1,4 @@
 ﻿using BookWebStore.Data;
-using BookWebStore.Data.Entities;
 using BookWebStore.Data.Models;
 using BookWebStore.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;

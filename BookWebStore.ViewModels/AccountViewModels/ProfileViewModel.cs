@@ -1,5 +1,4 @@
-﻿using BookWebStore.Constants;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using static BookWebStore.Constants.ModelConstants;
 
 namespace BookWebStore.ViewModels;

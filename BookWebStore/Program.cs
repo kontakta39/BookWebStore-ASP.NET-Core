@@ -6,7 +6,6 @@ using BookWebStore.Services;
 using BookWebStore.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace BookWebStore;
 
