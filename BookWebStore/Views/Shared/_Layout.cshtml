@@ -12,7 +12,7 @@
         if (user != null)
         {
             List<OrderBook> orderBooks = await OrderService.GetCartItemsAsync(user.Id);
-            cartCount = orderBooks.Sum(x => x.Quantity);
+            cartCount = orderBooks.Count;
         }
     }
 }
