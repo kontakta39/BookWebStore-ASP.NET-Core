@@ -6,7 +6,7 @@
 @{
     ViewData["Title"] = "Blog Information";
     ApplicationUser? user = await UserManager.GetUserAsync(User);
-    bool isMasterAdmin = user?.Email == "kontakta39@mail.bg";
+    bool isMasterAdmin = user?.Email == "kontakta39@mail.bg" || user?.Email == "admin@example.com";
     bool isOwner = user?.Id == Model.PublisherId;
 }
 
