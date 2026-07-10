@@ -7,7 +7,7 @@
     ApplicationUser? user = await UserManager.GetUserAsync(User);
     IList<string> roles = user != null ? await UserManager.GetRolesAsync(user) : new List<string>();
     string? role = roles.FirstOrDefault();
-    bool isMasterAdmin = User.IsInRole("Administrator") && user?.Email == "kontakta39@mail.bg";
+    bool isMasterAdmin = User.IsInRole("Administrator") && (user?.Email == "kontakta39@mail.bg" || user?.Email == "admin@example.com");
     string? activePage = ViewData["ActivePage"]?.ToString();   
 }
 
