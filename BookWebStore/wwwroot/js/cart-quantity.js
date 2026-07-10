@@ -32,8 +32,12 @@
 
                 if (data.success) {
                     const itemTotalElem = row.querySelector('.item-total');
-                    itemTotalElem.textContent = `${data.itemTotal} lv.`;
-                    totalPriceElem.innerHTML = `Total Price: <span class="text-primary">${data.totalPrice} lv.</span>`;
+
+                    const itemTotal = Number(data.itemTotal);
+                    const totalPrice = Number(data.totalPrice);
+
+                    itemTotalElem.textContent = `${itemTotal.toFixed(2)} € / ${(itemTotal * 1.95583).toFixed(2)} BGN`;
+                    totalPriceElem.innerHTML = `Total Price: <span class="text-primary">${totalPrice.toFixed(2)} € / ${(totalPrice * 1.95583).toFixed(2)} BGN</span>`;
                     this.defaultValue = this.value;
                 } else {
                     showError(data.error);
