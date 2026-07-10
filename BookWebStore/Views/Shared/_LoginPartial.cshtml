@@ -6,7 +6,7 @@
     @if (SignInManager.IsSignedIn(User))
     {
         ApplicationUser? user = await UserManager.GetUserAsync(User);
-        bool isMasterAdmin = User.IsInRole("Administrator") && user?.Email == "kontakta39@mail.bg";
+        bool isMasterAdmin = User.IsInRole("Administrator") && (user?.Email == "kontakta39@mail.bg" || user?.Email == "admin@example.com");
 
         <li class="nav-item dropdown position-relative">
             <a class="nav-link px-2 d-flex align-items-center text-dark fs-5 fw-semibold gap-1"
