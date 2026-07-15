@@ -70,9 +70,9 @@ Welcome to **BookWebStore** – an online bookstore web application built with A
 
 ## 🛠️ Requirements
 
-- .NET 10 SDK
-- SQL Server (Express / Developer)
-- Git
+- **.NET 10 SDK**
+- **SQL Server (Express / Developer)**
+- **Git**
 
 ---
 
