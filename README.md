@@ -107,7 +107,7 @@ https://localhost:7031
 
 ## 🔑 Default Admin Account
 
-**Note:** By default, the project comes with a pre-configured administrator account for local development and testing:
+**Note:** By default, the project comes with a pre-configured administrator account:
 
 - **Username:** Admin
 - **Email:** admin@example.com
