@@ -1,7 +1,7 @@
 # 📖 Book Web Store
-📚 Reference for my ASP.NET Advanced project, part of the [*C# Web - June 2025 @ SoftUni*](https://softuni.bg/trainings/4954/asp-net-advanced-june-2025) course, prepared for an assessment.
+📚 ASP.NET Core project developed as part of the [*C# Web - June 2025 @ SoftUni*](https://softuni.bg/trainings/4954/asp-net-advanced-june-2025) course.
 
-Welcome to **BookWebStore** – a web application designed to demonstrate my core web development skills through an online bookstore system.
+Welcome to **BookWebStore** – an online bookstore web application built with ASP.NET Core MVC, demonstrating authentication, authorization, database management, and e-commerce functionality.
 
 ---
 
@@ -68,36 +68,23 @@ Welcome to **BookWebStore** – a web application designed to demonstrate my cor
 
 ---
 
+## 🛠️ Requirements
+
+- .NET 10 SDK
+- SQL Server (Express / Developer)
+- Git
+
+---
+
 ## 🚀 How to Clone and Run the Project
 
-**1. Install Git**
-   
-If you don't have Git installed, download it from: [*https://git-scm.com/download/win*](https://git-scm.com/download/win)
-
-During the installation, choose:
-
-**Git from the command line and also from 3rd-party software**
-
-After the installation, verify in CMD or PowerShell:
+**1. Clone the repository**
 ```bash
-git --version
+git clone https://github.com/kontakta39/BookWebStore-ASP.NET-Core.git
+cd BookWebStore-ASP.NET-Core
 ```
 
-**2. Clone only the BookWebStore folder using sparse checkout:**
-```bash
-git clone --no-checkout https://github.com/kontakta39/SoftUni-CSharp-Software-Engineering.git
-cd SoftUni-CSharp-Software-Engineering
-git sparse-checkout init --cone
-git sparse-checkout set "08. ASP.NET Advanced/BookWebStore"
-git checkout main
-```
-
-**3. Enter the project folder:**
-```bash
-cd "08. ASP.NET Advanced/BookWebStore/BookWebStore"
-```
-
-**4. Set the connection string locally using user secrets:**
+**2. Set the connection string locally using user secrets:**
 
 Replace (PC_NAME) with your local SQL Server instance name.
 
@@ -105,13 +92,13 @@ Replace (PC_NAME) with your local SQL Server instance name.
 dotnet user-secrets set "ConnectionStrings:BookStoreConnectionString" "Server=(PC_NAME)\SQLEXPRESS;Database=BookStoreDb;Trusted_Connection=True;TrustServerCertificate=True;"
 ```
 
-**5. Restore dependencies, apply migrations, and run:**
+**3. Restore dependencies, apply migrations, and run:**
 ```bash
 dotnet restore
 dotnet run
 ```
 
-**6. Open in your browser:**
+**4. Open in your browser:**
 ```bash
 https://localhost:7031
 ```
@@ -120,13 +107,13 @@ https://localhost:7031
 
 ## 🔑 Default Admin Account
 
-**Note:** By default, the project comes with pre-configured administrator credentials for local use:
+**Note:** By default, the project comes with a pre-configured administrator account for local development and testing:
 
 - **Username:** Admin
 - **Email:** admin@example.com
 - **Password:** Admin123!
 
-This allows you to log in immediately without needing to configure secrets.
+⚠️ These credentials are intended only for local development and testing purposes.
 
 ---
 
