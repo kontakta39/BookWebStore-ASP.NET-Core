@@ -21,7 +21,7 @@ Welcome to **BookWebStore** – an online bookstore web application built with A
 - **Guest**: All newly registered users are assigned the Guest role by default. Can write and edit reviews, and place orders.  
 - **Moderator**: Can edit certain fields of Books and Blogs. Can also write reviews and place orders.  
 - **Administrator**: Can create Genres, Authors, Books, and Blogs. Can edit and delete Blogs and Books. Can also write reviews and place orders.  
-- **Master Admin (kontakta39)**: Has all administrator privileges. Can additionally change roles of other users. Stored in the database as an Administrator.  
+- **Master Admin (kontakta39 / demoadmin)**: Has all administrator privileges. Can additionally change roles of other users. Stored in the database as an Administrator.  
 
 ---
 
@@ -109,7 +109,7 @@ https://localhost:7031
 
 **Note:** By default, the project comes with a pre-configured administrator account:
 
-- **Username:** Admin
+- **Username:** demoadmin
 - **Email:** admin@example.com
 - **Password:** Admin123!
 
